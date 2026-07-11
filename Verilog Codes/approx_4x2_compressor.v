@@ -8,4 +8,5 @@ module approx_4x2_compressor(input a,b,c,d, output sum, carry, cout);
   mux mux6(.d0(1'b0),.d1(o4),.s(o1),.out_mux(o5));
   mux mux7(.d0(b),.d1(1'b1),.s(a),.out_mux(o6));
   mux mux8(.d0(d),.d1(1'b1),.s(c),.out_mux(carry));
+  assign cout = 1'b0;
 endmodule
